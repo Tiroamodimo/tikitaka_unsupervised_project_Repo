@@ -1,0 +1,8 @@
+If you want to load the kaggle data into your EC2 instance
+
+on the EC2 instance pip install kaggle
+Generate an API token at your profile (homepage www.kaggle.com -> Your Account -> Create New API token)
+This will download a kaggle.json file
+use scp to move the kaggle.json file from your local computer downloads folder to your EC2 instance
+scp ~/Downloads/kaggle.json explore-student@<IP adress>:~/.kaggle
+ Then run chmod 600 ./kaggle.json
